@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 
+// local imports:
+import Pointer from "src/components/atoms/pointer";
 
 // style imports:
 import "./globals.scss";
@@ -24,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Pointer />
         {children}
       </body>
     </html>
