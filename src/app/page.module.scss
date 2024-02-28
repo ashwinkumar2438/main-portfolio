@@ -1,8 +1,31 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+.root{
+  display: grid;
+  grid-template-columns: [full-start] minmax( var( --side-padding ), 1fr ) [content-start] minmax( auto, var( --max-width ) ) [content-end] minmax( var( --side-padding ), 1fr ) [full-end];
+  padding-top: 6rem;
+  .main {
+    grid-column: content;
+    display: grid;
+    grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+    & > .left{
+      .details {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 12px;
+        .header{
+          font-size: 3rem;
+          font-weight: 700;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-image: var( --hdr-bg );
+        }
+        .subHeader{
+          font-size: 1.25rem;
+          font-weight: 500;
+          color: var( --hdr-color )
+        }
+      }
+    }
+  }
 }
