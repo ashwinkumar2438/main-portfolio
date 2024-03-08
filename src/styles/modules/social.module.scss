@@ -1,0 +1,32 @@
+.social{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 24px;
+    & > li{
+        width: 24px;
+        a{
+            display: inline-block;
+            width: 100%;
+            cursor: pointer;
+            .svg{
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                color: var( --text-color );
+                fill: var( --text-color );
+                transition: color 200ms, transform 300ms;
+                transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95 );
+            }
+
+            &:hover .svg{
+                color: var( --text-sharp-color );
+                fill: var( --text-sharp-color );
+                transform: translate( 2px, -2px );
+            }
+        }
+    }
+}
