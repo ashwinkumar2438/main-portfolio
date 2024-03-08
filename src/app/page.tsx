@@ -2,6 +2,9 @@ import styles from "./page.module.scss";
 
 // components
 import Text from "src/components/atoms/text";
+import Navigate from "src/components/modules/navigate";
+import Social from "src/components/modules/social";
+import { links } from "src/consts";
 
 export default function Home() {
   return (
@@ -13,6 +16,10 @@ export default function Home() {
                 <h3 className={styles.subHeader}>Senior Frontend Developer at Skillovilla</h3>
                 <Text>A simple developer with passion for building complex tools</Text>
               </div>
+              <Navigate 
+                links={ links }
+              />
+              <Social className={ styles.social }/>
           </section>
           <section className={ styles.right }>
 
