@@ -1,0 +1,11 @@
+.about{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    row-gap: var( --gap );
+    code{
+        color: var( --text-sharp-color );
+        font-size: 0.9rem;
+    }
+}

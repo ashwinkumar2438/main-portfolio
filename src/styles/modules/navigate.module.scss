@@ -1,7 +1,7 @@
 .navigations{
     list-style-type: none;
     padding: 10px;
-    & > li {
+    & > li a{
         display: flex;
         flex-flow: row nowrap;
         column-gap: 16px;
@@ -16,7 +16,7 @@
             transition: width 300ms;
             transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
         }
-        a{
+        span{
             font-size: 0.75rem;
             font-weight: 700;
             letter-spacing: 2px;

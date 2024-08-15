@@ -1,10 +1,15 @@
-import styles from "./page.module.scss";
-
 // components
 import Text from "src/components/atoms/text";
 import Navigate from "src/components/modules/navigate";
 import Social from "src/components/modules/social";
+import About from "src/components/modules/about";
+
+// constants:
 import { links } from "src/consts";
+
+// styles:
+import styles from "src/styles/pages/page.module.scss";
+
 
 export default function Home() {
   return (
@@ -22,7 +27,7 @@ export default function Home() {
               <Social className={ styles.social }/>
           </section>
           <section className={ styles.right }>
-
+            <About />
           </section>
       </main>
     </div>

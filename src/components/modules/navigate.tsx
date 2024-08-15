@@ -1,9 +1,6 @@
 // css imports:
 import styles from  'src/styles/modules/navigate.module.scss';
 
-// component imports:
-import Text from '../atoms/text';
-
 type Link = {
     id: string, 
     name: string
@@ -20,9 +17,9 @@ const Navigate = ( { links } : Props ) => {
             {
                 links.map( ( { id, name } ) => (
                     <li key={ name }>
-                        <div className={ styles.line }></div>
                         <a href={ id }>
-                            <Text>{ name }</Text>
+                            <div className={ styles.line }></div>
+                            <span>{ name }</span>
                         </a>
                     </li>
                 ) )

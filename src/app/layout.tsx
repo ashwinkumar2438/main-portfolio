@@ -4,7 +4,7 @@ import type { Metadata, Viewport } from "next";
 import Pointer from "src/components/atoms/pointer";
 
 // style imports:
-import "./globals.scss";
+import 'src/styles/globals.scss';
 
 export const metadata: Metadata = {
   title: "Ashwin's World",

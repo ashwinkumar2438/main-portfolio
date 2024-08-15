@@ -19,7 +19,7 @@ import { ComponentType } from 'react';
 const socials: Array< { title: string, url: string, Icon: ComponentType< { className?: string } > } > = [
     { title: 'Medium', url: 'https://medium.com/@ashwinkumar2438', Icon: Medium },
     { title: 'CodeSandbox', url: 'https://codesandbox.io/u/ashwinkumar2438', Icon: SandBox },
-    { title: 'LinkedIn', url: '', Icon: LinkedIn },
+    { title: 'LinkedIn', url: 'https://www.linkedin.com/in/ashwin-kumar-996b8b12a', Icon: LinkedIn },
     { title: 'GitHub', url: 'https://github.com/ashwinkumar2438', Icon: GitHub }
 ]
 

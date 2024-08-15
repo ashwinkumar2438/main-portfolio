@@ -40,5 +40,9 @@
         margin-top: auto;
       }
     }
+
+    & > .right{
+        padding-top: var( --gap );
+    }
   }
 }
